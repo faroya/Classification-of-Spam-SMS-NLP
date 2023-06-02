@@ -24,7 +24,7 @@ from sklearn.model_selection import train_test_split
 
 
 # Loading the dataset
-df = pd.read_csv('Spam SMS Collection', sep='\t', names=['label', 'message'])
+df = pd.read_csv('spam SMS data', sep='\t', names=['label', 'message'])
 df.describe(include='object')
 df['label'] = df['label'].map({'ham': 0, 'spam': 1})
 
